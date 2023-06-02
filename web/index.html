@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Calculator</h1>
+      <input type="text" id="input" /><br />
+      <button type="button" value="9" onclick="appNum('9')">9</button>
+      <button type="button" value="8" onclick="appNum('8')">8</button>
+      <button type="button" value="7" onclick="appNum('7')">7</button>
+      <button type="button" value="+" onclick="appOpe('+')">+</button><br />
+      <button type="button" value="6" onclick="appNum('6')">6</button>
+      <button type="button" value="5" onclick="appNum('5')">5</button>
+      <button type="button" value="4" onclick="appNum('4')">4</button>
+      <button type="button" value="*" onclick="appOpe('*')">*</button><br />
+      <button type="button" value="3" onclick="appNum('3')">3</button>
+      <button type="button" value="2" onclick="appNum('2')">2</button>
+      <button type="button" value="1" onclick="appNum('1')">1</button>
+      <button type="button" value="-" onclick="appOpe('-')">-</button><br />
+      <button type="button" value="del" onclick="clearInput()">AC</button>
+      <button type="button" value="0" onclick="appNum('0')">0</button>
+      <button type="button" value="/" onclick="appOpe('/')">/</button>
+      <button type="button" value="=" onclick="calculate()">=</button>
+    </div>
+  </body>
+  <script src="../js/calculator.js"></script>
+</html>

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 20px;
+}
+
+.container{
+    width: 30%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+input{
+    width: 144px;
+    margin-bottom: 5px;
+}
+
+button{
+    width: 30px;
+    margin: 2px;
+}
