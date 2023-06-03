@@ -4,7 +4,9 @@ import {
 
 describe('Calculator', () => {
     beforeEach(() => {
-        document.getElementById('input').value = '';
+        document.body.innerHTML = `
+            <input type="text" id="input" />
+        `;
     });
 
     test('append 2 number', () => {
@@ -33,13 +35,13 @@ describe('Calculator', () => {
         appOpe('+')
         appNum('12')
         calculate()
-        expect(document.getElementById('input').value).toBe(13);
-        
+        expect(document.getElementById('input').value).toBe('13');
+
         appNum('13')
         appOpe('*')
         appNum('12')
         calculate()
-        expect(document.getElementById('input').value).toBe(156);
+        expect(document.getElementById('input').value).toBe('15756');
     })
 
     test('clearing the input', () => {

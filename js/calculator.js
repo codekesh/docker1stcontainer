@@ -1,17 +1,19 @@
-export function appNum(number) {
+function appNum(number) {
     document.getElementById('input').value += number
 }
 
-export function appOpe(operator) {
+function appOpe(operator) {
     document.getElementById('input').value += operator
 }
 
-export function calculate() {
+function calculate() {
     const displayValue = document.getElementById('input').value;
     const result = eval(displayValue);
     document.getElementById('input').value = result;
 }
 
-export function clearInput() {
+function clearInput() {
     document.getElementById('input').value = '';
 }
+
+module.exports = { appNum, appOpe, calculate, clearInput };
